@@ -1,0 +1,36 @@
+{
+  "coord": { "lon": -0.13, "lat": 51.51 },
+  "weather": [
+    { "id": 800, "main": "Clear", "description": "clear sky", "icon": "01n" }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 285.34,
+    "pressure": 1026,
+    "humidity": 67,
+    "temp_min": 283.15,
+    "temp_max": 288.15
+  },
+  "visibility": 10000,
+  "wind": { "speed": 4.1, "deg": 290 },
+  "clouds": { "all": 0 },
+  "dt": 1540403400,
+  "sys": {
+    "type": 1,
+    "id": 5091,
+    "message": 0.1768,
+    "country": "GB",
+    "sunrise": 1540363264,
+    "sunset": 1540399640
+  },
+  "id": 2643743,
+  "name": "London",
+  "cod": 200,
+
+
+
+
+  {"coord":{"lon":37.62,"lat":55.75},"weather":[{"id":500,"main":"Rain","description":"light rain","icon":"10n"},{"id":741,"main":"Fog","description":"fog","icon":"50n"}],"base":"stations","main":{"temp":277.65,"pressure":985,"humidity":100,"temp_min":277.15,"temp_max":278.15},"visibility":7000,"wind":{"speed":1.87,"deg":105.502},"clouds":{"all":75},"dt":1540402200,"sys":{"type":1,"id":7325,"message":0.0026,"country":"RU","sunrise":1540354796,"sunset":1540389981},"id":524901,"name":"Moscow","cod":200}
+}
+
+
