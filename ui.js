@@ -19,7 +19,7 @@ class UI {
     this.coord.textContent = `Lon: ${weather.coord.lon}, Lat: ${weather.coord.lat}`
     this.description.textContent = weather.weather[0].description
     this.string.textContent = `${Math.ceil(weather.main.temp)} ˚C`
-    this.icon.setAttribute('src', `http://openweathermap.org/img/w/${weather.weather[0].icon}.png`)
+    this.icon.setAttribute('src', `https://openweathermap.org/img/w/${weather.weather[0].icon}.png`)
     this.pressure.textContent = `Pressure: ${weather.main.pressure} kPa`
     this.humidity.textContent = `Humidity: ${weather.main.humidity} %`
     this.wind.textContent = `Wind: ${Math.ceil(weather.wind.deg)}˚ Speed: ${Math.ceil(weather.wind.speed)} m/s`
