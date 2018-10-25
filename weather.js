@@ -11,7 +11,7 @@ class Weather {
   async getWeather () {
     // Fetch data
     // units=metric temp in celcius
-    const response = await window.fetch(`http://api.openweathermap.org/data/2.5/weather?q=${this.city},${this.country}&units=metric&appid=${this.apiKey}`)
+    const response = await window.fetch(`https://api.openweathermap.org/data/2.5/weather?q=${this.city},${this.country}&units=metric&appid=${this.apiKey}`)
 
     const respData = await response.json()
 
