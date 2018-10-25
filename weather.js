@@ -1,9 +1,10 @@
 class Weather {
-  constructor (city, country, units) {
+  constructor (city, country) {
     this.apiKey = '0458a23aa5af8769a2384b8d9d0e8d78'
     this.city = city
     this.country = country
-    this.units = units
+    // TODO: add units to func options
+    // this.units = units
   }
 
   // Fetch weather from API
