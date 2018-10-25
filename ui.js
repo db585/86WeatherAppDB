@@ -29,17 +29,15 @@ class UI {
     // http://www.javascriptkit.com/dhtmltutors/local-time-google-time-zone-api.shtml
     // nice example get timezone by lon and lat and get timezone by Google timezone API
     const dateSunrise = new Date(weather.sys.sunrise * 1000)
-    // const hourSunrise = dateSunrise.getUTCHours()
-    // const minuteSunrise = dateSunrise.getUTCMinutes()
-    const timeSunrise = dateSunrise.toLocaleTimeString()
+    const hourSunrise = dateSunrise.getUTCHours()
+    const minuteSunrise = dateSunrise.getUTCMinutes()
 
     // Calculate hour of sunset
     const dateSunset = new Date(weather.sys.sunset * 1000)
     const hourSunset = dateSunset.getUTCHours()
     const minuteSunset = dateSunset.getUTCMinutes()
 
-    // this.sunrise.textContent = `Sunrise UTC: ${hourSunrise} h ${minuteSunrise} min`
-    this.sunrise.textContent = `Sunrise UTC: ${timeSunrise}`
+    this.sunrise.textContent = `Sunrise UTC: ${hourSunrise} h ${minuteSunrise} min`
     this.sunset.textContent = `Sunset UTC: ${hourSunset} h ${minuteSunset} min`
   }
 }
