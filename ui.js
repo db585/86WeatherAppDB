@@ -23,7 +23,23 @@ class UI {
     this.pressure.textContent = `Pressure: ${weather.main.pressure} kPa`
     this.humidity.textContent = `Humidity: ${weather.main.humidity} %`
     this.wind.textContent = `Wind: ${Math.ceil(weather.wind.deg)}˚ Speed: ${Math.ceil(weather.wind.speed)} m/s`
-    this.sunrise.textContent = `Sunrise: ${weather.sys.sunrise}`
-    this.sunset.textContent = `Sunset: ${weather.sys.sunset}`
+
+    // Calculate hour of sunrise
+    // TODO: Calculate local hour for the city
+    // http://www.javascriptkit.com/dhtmltutors/local-time-google-time-zone-api.shtml
+    // nice example get timezone by lon and lat and get timezone by Google timezone API
+    const dateSunrise = new Date(weather.sys.sunrise * 1000)
+    // const hourSunrise = dateSunrise.getUTCHours()
+    // const minuteSunrise = dateSunrise.getUTCMinutes()
+    const timeSunrise = dateSunrise.toLocaleTimeString()
+
+    // Calculate hour of sunset
+    const dateSunset = new Date(weather.sys.sunset * 1000)
+    const hourSunset = dateSunset.getUTCHours()
+    const minuteSunset = dateSunset.getUTCMinutes()
+
+    // this.sunrise.textContent = `Sunrise UTC: ${hourSunrise} h ${minuteSunrise} min`
+    this.sunrise.textContent = `Sunrise UTC: ${timeSunrise}`
+    this.sunset.textContent = `Sunset UTC: ${hourSunset} h ${minuteSunset} min`
   }
 }

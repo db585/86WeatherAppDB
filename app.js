@@ -7,6 +7,7 @@ const ui = new UI()
 document.addEventListener('DOMContentLoaded', callGetWeather)
 
 // weather.changeLocation('London', 'uk')
+weather.changeLocation('Montreal', 'ca')
 
 function callGetWeather () {
   weather.getWeather()
